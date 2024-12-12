@@ -10,15 +10,23 @@
     */
 
     // Entrada de dados
-    
+    let valorCompra = parseInt(prompt("Digite o valor da compra (somente números):"));
 
 
     // Processamento
-    
-    
+    let desconto = valorCompra > 500 ? 0.15 :
+
+valorCompra > 300 ? 0.10 :
+
+valorCompra > 100 ? 0.05 : 0;
+ let precoFinal = valorCompra * (1 - desconto);   
     
     // Saída de dados
-    
+    document.write("Valor da compra: R$ " + valorCompr) + "<br>");
+
+document.write("Desconto aplicado: " + (desconto * 100) + "%<br>");
+
+document.write("Preço final com desconto: R$ " + precoFinal);
 
 
 </script>
