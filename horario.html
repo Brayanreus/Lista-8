@@ -7,15 +7,47 @@
     */
 
     // Entrada de dados
-    
+    const hora = parseInt(prompt("Informe a hora (0 a 24):"), 10);
 
 
     // Processamento
-    
+    let periodo;
+
+switch (true) {
+
+case (hora >= 6 && hora < 12):
+
+periodo = "Manhã";
+
+break;
+
+case (hora >= 12 && hora < 18):
+
+periodo = "Tarde";
+
+break;
+
+case (hora >= 18 && hora <= 24):
+
+periodo = "Noite";
+
+break;
+
+case (hora >= 0 && hora < 6):
+
+periodo = "Madrugada";
+
+break;
+
+default:
+
+periodo = "Hora inválida";
+
+}
     
     
     // Saída de dados
-    
+    document.write(`O período correspondente é: ${periodo}`);
 
 
 </script>
