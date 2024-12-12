@@ -7,15 +7,17 @@
     */
 
     // Entrada de dados
-    
+    const valorCompra = 150; // Valor da compra (em R$)
+
+const clienteVIP = true; // Define se o cliente é VIP (true ou false)
 
 
     // Processamento
-    
+    const freteGratis = (valorCompra > 200 || clienteVIP) ? "Sim" : "Não";
     
     
     // Saída de dados
-    
+    document.write(`<p>Frete grátis? ${freteGratis}</p>`);
 
 
 </script>
