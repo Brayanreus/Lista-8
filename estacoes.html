@@ -8,15 +8,75 @@
     */
 
     // ENTRADA DE DADOS
-    
+    let hemisferio = prompt("Em qual hemisfério você está? (Norte/Sul)").toLowerCase();
+
+let mes = prompt("Qual o mês atual? (Digite o número do mês, de 1 a 12)");
 
     
     // PROCESSAMENTO
-    
+    let estacao;
 
+switch (parseInt(mes)) {
+
+case 12:
+
+case 1:
+
+case 2:
+
+estacao = hemisferio === "norte" ? "Inverno" : "Verão";
+
+break;
+
+case 3:
+
+case 4:
+
+case 5:
+
+estacao = hemisferio === "norte" ? "Primavera" : "Outono";
+
+break;
+
+case 6:
+
+case 7:
+
+case 8:
+
+estacao = hemisferio === "norte" ? "Verão" : "Inverno";
+
+break;
+
+case 9:
+
+case 10:
+
+case 11:
+        
+estacao = hemisferio === "norte" ? "Outono" : "Primavera";
+
+break;
+
+default:
+
+estacao = "Mês inválido.";
+
+}
 
     // SAÍDA DE DADOS
-    
+    if (estacao !== "Mês inválido.") {
+
+document.write(`No hemisfério ${hemisferio}, a estação atual é:
+
+<strong>${estacao}</strong>.`);
+
+} else {
+
+document.write(`<strong>${estacao}</strong>`);
+
+ 
+  }
 
 
 </script>
