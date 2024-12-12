@@ -10,15 +10,40 @@
     */
 
     // Entrada de dados
-    
+
+const dias = parseInt(prompt("Por quantos dias você ficará com a bicicleta?"));
 
 
     // Processamento
+const precoDiario = 15;
 
+let precoFinal;
+
+if (dias > 7) {
+
+const desconto = precoDiario * 0.2; // 20% de desconto
+
+precoFinal = dias * (precoDiario - desconto);
+
+} else {
+
+precoFinal = dias * precoDiario;
+
+}
+
+    
     
     
     // Saída de dados
     
+document.write(`
 
+<h2>Resumo da Locação</h2>
+
+<p>Você ficará com a bicicleta por <strong>${dias}</strong> dias.</p>
+
+<p>O preço final será: <strong>R$ ${precoFinal}</strong></p>
+
+`);
 
 </script>
